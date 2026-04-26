@@ -1,0 +1,167 @@
+Delivered-To: amaankhan06043@gmail.com
+Received: by 2002:a05:6f02:a45a:b0:11b:beb:3421 with SMTP id a26csp403700rci;
+        Fri, 10 Apr 2026 02:31:50 -0700 (PDT)
+X-Received: by 2002:a4a:ee07:0:b0:68c:2ff9:522c with SMTP id 006d021491bc7-68c2ff95a21mr696277eaf.2.1775813510743;
+        Fri, 10 Apr 2026 02:31:50 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1775813510; cv=pass;
+        d=google.com; s=arc-20240605;
+        b=gsfpVzSZVDnGxGGOfnuAgLwr/bYQgi3G+MJZb8ItTqptJCkpIA8fPUmRITdzz41Fbm
+         E7hAtvINj74974S1ofMHtD94DL/nM4SBLDqN4+d8Koj1Ey11lyqMaNxqDbFrQc7Jfk5Y
+         rly8ObNntfUbzJ0akYLtzFAZMPWFuxaZhgnJI/NGneQQ+99uDn/ZLUiXKu7fMca++JI0
+         yGHeNpPERbn/n/hJNeNTQzNPZ8thIdKyWuIamZ2N0w19qvgw6GB0TnDQ/1ttwmXBa18s
+         T7AsXjfUP9LxFxoOrzhAt8hEOcTix7XVvdO1j9CyoeXS8z+pabM3o15DbU520MJa+LQY
+         QWcw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=9MVvsZ28KSakqom9LH0plWyWjOwBB5gkME7XzOXF8ck=;
+        fh=cRvGCliM4O+SQ9B6tnfwvJArYTYWdptBBa8OEQYzVbY=;
+        b=eySQYyvDPFV6ybEY08g08kKoGwTsfMrn1wNko3pC2gmMcjsX/z1ucrbewueAZj0dnu
+         W/D8qZwWKgR+zIcNqRrmngiYY7wD6WStVYIX5Leo2UyAIe433vJInElJ/xTNC374AdPB
+         JK1yRqx2p2ftCWIQC8eASSvCtzau8pFXYkk3raXRifHe/tYVSRbHiw12HcmO/xXBrdFM
+         SowETnDyjY4n/gaK1a7KOqZyavui1FpptfUwg3z7oa+qzRiWCMOEe+y+QlQuIRlTgCai
+         8jJm0UJ8DvsLfh2DLZqyJFk9Rf8CCav/m8B15BgPEbXM5uR3OewG2bg3JhuVT/BNJXO6
+         07iw==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b=jMXD6j7d;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of patidaar.pragya@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=patidaar.pragya@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <patidaar.pragya@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 006d021491bc7-68bc82eb7f1sor856956eaf.2.2026.04.10.02.31.50
+        for <amaankhan06043@gmail.com>
+        (Google Transport Security);
+        Fri, 10 Apr 2026 02:31:50 -0700 (PDT)
+Received-SPF: pass (google.com: domain of patidaar.pragya@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b=jMXD6j7d;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of patidaar.pragya@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=patidaar.pragya@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+ARC-Seal: i=1; a=rsa-sha256; t=1775813510; cv=none;
+        d=google.com; s=arc-20240605;
+        b=j2W90wE3mg0l/tyznz7OYgn6kkQpUJ0Zf4HX7gcsDYU2mmmwkb5mNf6T6FcusO2MpM
+         KrmjLTHpQ6hyCoY//gKU4PkNu1TWCY8SaHJszyWedW2Sxw+okNM9gJRmnasEI2CUngv/
+         pPnZQgXwaBg8ig5WoR9j1APW8Yzj6+SdVlHYN0/ZbDqq06LURatod4TPqd4Rc1jfgPU2
+         Q+lESwTbEWm1fZP7wpfxTBxSbqHYS8hGsHGj0I+dL/XXPooI3YxQgKt5XgeH8Yg8uCPK
+         xzse3iZz03CiYPgK+9Xp968d5ikaje0muwlVmJY+pBw+/HbEZRIB0CeAjRLNk1uULlyt
+         odCQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=9MVvsZ28KSakqom9LH0plWyWjOwBB5gkME7XzOXF8ck=;
+        fh=cRvGCliM4O+SQ9B6tnfwvJArYTYWdptBBa8OEQYzVbY=;
+        b=EcLa5d2/Cr/MUhQ2ohWZMmS5ZfwXdR2owYyQ2BZu6V99ero/m5+RLBtkW4YYSNAihN
+         54oC/vnYl85FJLYqJdStQ2VhJLq28EzO0Z6oLh/Lx3xhcAUkBoKNCCGzSlBb76eSflF4
+         sLcmZDbmg442rPOgAUl4pgGvNS08a53i4HCCDf58m7FzMHispnTti2cljJU8n8WrOEla
+         ocpllJP7q3jjAKeRJQkCmLBx/KM8X/r4dm9YBspWui03jVevWA2Fuy+c8rV5pvlnm0+q
+         mfHaUfCtzHfdoLmiTcFymN9sO6AAFXyW2jfT3cukr6sfaXL181e4DfbTgQCeEAoguSUz
+         ojYw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20251104; t=1775813510; x=1776418310; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=9MVvsZ28KSakqom9LH0plWyWjOwBB5gkME7XzOXF8ck=;
+        b=jMXD6j7daM+6cw1j6HiXMLeUkq6pi0icGgYvhs1GZArH/V1qmBhOKEc2bcn7v/LGMb
+         3As+moSNBMOUidZI8ImHlZ0z3oHxisHdCPrU6/5eAii+Ozz4qUg1dy/m9x25Fe772fbt
+         vw/HV0ASQz+w/SublUgxpiSvVsmmXU/1DNjIGAdVDJZbWvW82tp508tIVHCY4wKkBTiF
+         cLEr3aT/o3fd8bNF9KD5Hd80dHfo2GqGkQddxhuy+xdAAUL/tG3CyKjxsd6PfEl94yzW
+         gXRxJral+/DO+eSIViah8IE6Y+RyqJgnZJEM3hoEIEBTLhS+muSH46qqn11iTNz5fvAh
+         vCwg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1775813510; x=1776418310;
+        h=to:subject:message-id:date:from:mime-version:x-gm-gg
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=9MVvsZ28KSakqom9LH0plWyWjOwBB5gkME7XzOXF8ck=;
+        b=Af1i+EDG7s767yEnas3+7DPkiI6NCwcAHlH56kJuEXEcJgHp2JlTEhr+06T3fDTlzr
+         OzhcHlEGU6qvnrNRjFGPX9g//rwzKy3vq6EGxm4Bat7z5+4VbAKfthuld5SNb8z5Qr9c
+         jhcj3c9SrvXq3BTC3eniwDnnjgnw5JDQEWXgkkzmxiVBIVSnEMCPONMD+PBOsosrBBcz
+         LWJXKawTqW6RLkSmAr80DV06EPd/AWf/h8Oa2mBlr5tiy+SmiMAYmiaaGjhup1VGx15I
+         HY7E8Mi62Vg6k2b6ZnEJneO5v9jbCL9vSJxZ9AFlqlWlwI42E2BLgRBYwwDsatyW9nfJ
+         SGfw==
+X-Gm-Message-State: AOJu0YyJ12eaHfD7tg14zW3aVjtZVqpduVHhn7Jge3FryKEvpqWFCqPl
+	pXf2yEubiDOx1qkIsuYvRzK+5AJHhYBUH+M29+CX1ioWiuFbtOzzDaqWFJ8dH1coXGNQx+1HEIm
+	P9yEiWxmUliz2tlDgaIj+r0nig6R5kE1Blw==
+X-Gm-Gg: AeBDiesjTMjNUdPQw6UnRkA2Aq68s8VYa26s4uXU47SieYk1EiRa4rMXYYLPVTThtsF
+	SMw5haK0snWHR6D9qYyeKi54E2kal5bquXCStyXmK06uczHNtF0aRoWSthjA8LvH1hK3NfdChhT
+	HaTmwNd7ayABq8N9gzIiF8uU021gPVeNzo8bREuiiRJSQxdT5v4RgmafLXScoP+pCG6rYVcjIpY
+	dT15zKxjpr5MapEXq0iOiVUSCC3Kbu6xC7E5uSkxv9jt6cFD11vmfeUApXTK9E0bgVMWETqNw8K
+	gLZsn7w98gz+zbLCZFTpoY/VOSdwN8vSdBuNN4A4lTl0EqpxmX5eORlijsxnfmIavSetvkjGlQ=
+	=
+X-Received: by 2002:a05:6820:f021:b0:67d:fc49:4b97 with SMTP id
+ 006d021491bc7-68be5f4ddbfmr1054365eaf.13.1775813510031; Fri, 10 Apr 2026
+ 02:31:50 -0700 (PDT)
+MIME-Version: 1.0
+From: Pragya Patidar <patidaar.pragya@gmail.com>
+Date: Fri, 10 Apr 2026 15:01:37 +0530
+X-Gm-Features: AQROBzDRDEKbO-f-vZtGFILggzjgHbcACcWl0R5s-tR57CjJH1za6TZt-uCiISg
+Message-ID: <CAL0ZCtJt=1=T_LYFWTc=7k0sfyKz674pdm_0cxYAaXSsgT16YQ@mail.gmail.com>
+Subject: task management 1
+To: Mohd Amaan <amaankhan06043@gmail.com>
+Content-Type: multipart/alternative; boundary="00000000000073ee07064f17cdf1"
+
+--00000000000073ee07064f17cdf1
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+https://id-preview--bb277116-5953-4853-a1c5-a51e984a63a8.lovable.app/?__lov=
+able_token=3DeyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMFNnRWlKR=
+mlLZVJtNVhQOGFBQlhhMmloTlg5MiIsInByb2plY3RfaWQiOiJiYjI3NzExNi01OTUzLTQ4NTMt=
+YTFjNS1hNTFlOTg0YTYzYTgiLCJhY2Nlc3NfdHlwZSI6InByb2plY3QiLCJpc3MiOiJsb3ZhYmx=
+lLWFwaSIsInN1YiI6ImJiMjc3MTE2LTU5NTMtNDg1My1hMWM1LWE1MWU5ODRhNjNhOCIsImF1ZC=
+I6WyJsb3ZhYmxlLWFwcCJdLCJleHAiOjE3NzY0MTgxNjUsIm5iZiI6MTc3NTgxMzM2NSwiaWF0I=
+joxNzc1ODEzMzY1fQ.lLzXJ1mBTrRRTrHr7OWdS-mrYl5syX2B7MMoxwWYLWbiTV-HpZgTVFiyL=
+D050vTDt9iG8fan7QONFPfGyD20ivr-MVKdwgwywjkKwSlTbZp84GzcAIrVBHgxC3OU0EGzIRJN=
+aPGY5Cm7H1vKVj0O5Q7O9i7JGUrjWRvWLzdRmoa5Xf-VY5fl7vIudrmOio5f9E3dS3uQHyLu5_U=
+sGwd9gP_iHiTX_rndrXsGJDbw0uOMelNAlU6wMfJKMlaEEZ5M01twUu1IpnPegtzx3sI2VOupOP=
+gKCWVSMLj788PQCs72y4u_3UAWFR6QPiFHfgnGpTqz-4mhbH5aqeqBdtjWw0TPpM8GJNq-UDLPP=
+c-cv4CAlsjv-WccYrw3VdU3tos9sF7M4H28PD94aGB2WoCNvlxbXN-qFnNZAguLyF1jzzCOrrgk=
+jRfTwyZb6flL_MrRvudWU9UEg_AN9PF5SiFVDE6CrW3pzEvKU-fzT-3c6i_a3I7fpgBY0QKfDiN=
+Oq2YGfD8I4Rt1GnC0u77Gy0XxQ7BJfvErGbGADu4hDwPxOHTjsMPzNMJUBCMQPwlshdij8Q0ES6=
+wvRE4kk3y5DdDh7vXinrbcQItJura_FPqNDuSJjUzab6yY7bz6ON-6ZiN_LIlXKCvqHnBoJpEW3=
+4V1yTxhMMOkp9bQSlD4NBeCnis
+
+--00000000000073ee07064f17cdf1
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div dir=3D"ltr"><a href=3D"https://id-preview--bb277116-5=
+953-4853-a1c5-a51e984a63a8.lovable.app/?__lovable_token=3DeyJhbGciOiJSUzI1N=
+iIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMFNnRWlKRmlLZVJtNVhQOGFBQlhhMmloTlg5MiI=
+sInByb2plY3RfaWQiOiJiYjI3NzExNi01OTUzLTQ4NTMtYTFjNS1hNTFlOTg0YTYzYTgiLCJhY2=
+Nlc3NfdHlwZSI6InByb2plY3QiLCJpc3MiOiJsb3ZhYmxlLWFwaSIsInN1YiI6ImJiMjc3MTE2L=
+TU5NTMtNDg1My1hMWM1LWE1MWU5ODRhNjNhOCIsImF1ZCI6WyJsb3ZhYmxlLWFwcCJdLCJleHAi=
+OjE3NzY0MTgxNjUsIm5iZiI6MTc3NTgxMzM2NSwiaWF0IjoxNzc1ODEzMzY1fQ.lLzXJ1mBTrRR=
+TrHr7OWdS-mrYl5syX2B7MMoxwWYLWbiTV-HpZgTVFiyLD050vTDt9iG8fan7QONFPfGyD20ivr=
+-MVKdwgwywjkKwSlTbZp84GzcAIrVBHgxC3OU0EGzIRJNaPGY5Cm7H1vKVj0O5Q7O9i7JGUrjWR=
+vWLzdRmoa5Xf-VY5fl7vIudrmOio5f9E3dS3uQHyLu5_UsGwd9gP_iHiTX_rndrXsGJDbw0uOMe=
+lNAlU6wMfJKMlaEEZ5M01twUu1IpnPegtzx3sI2VOupOPgKCWVSMLj788PQCs72y4u_3UAWFR6Q=
+PiFHfgnGpTqz-4mhbH5aqeqBdtjWw0TPpM8GJNq-UDLPPc-cv4CAlsjv-WccYrw3VdU3tos9sF7=
+M4H28PD94aGB2WoCNvlxbXN-qFnNZAguLyF1jzzCOrrgkjRfTwyZb6flL_MrRvudWU9UEg_AN9P=
+F5SiFVDE6CrW3pzEvKU-fzT-3c6i_a3I7fpgBY0QKfDiNOq2YGfD8I4Rt1GnC0u77Gy0XxQ7BJf=
+vErGbGADu4hDwPxOHTjsMPzNMJUBCMQPwlshdij8Q0ES6wvRE4kk3y5DdDh7vXinrbcQItJura_=
+FPqNDuSJjUzab6yY7bz6ON-6ZiN_LIlXKCvqHnBoJpEW34V1yTxhMMOkp9bQSlD4NBeCnis" ta=
+rget=3D"_blank">https://id-preview--bb277116-5953-4853-a1c5-a51e984a63a8.lo=
+vable.app/?__lovable_token=3DeyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX=
+2lkIjoiMFNnRWlKRmlLZVJtNVhQOGFBQlhhMmloTlg5MiIsInByb2plY3RfaWQiOiJiYjI3NzEx=
+Ni01OTUzLTQ4NTMtYTFjNS1hNTFlOTg0YTYzYTgiLCJhY2Nlc3NfdHlwZSI6InByb2plY3QiLCJ=
+pc3MiOiJsb3ZhYmxlLWFwaSIsInN1YiI6ImJiMjc3MTE2LTU5NTMtNDg1My1hMWM1LWE1MWU5OD=
+RhNjNhOCIsImF1ZCI6WyJsb3ZhYmxlLWFwcCJdLCJleHAiOjE3NzY0MTgxNjUsIm5iZiI6MTc3N=
+TgxMzM2NSwiaWF0IjoxNzc1ODEzMzY1fQ.lLzXJ1mBTrRRTrHr7OWdS-mrYl5syX2B7MMoxwWYL=
+WbiTV-HpZgTVFiyLD050vTDt9iG8fan7QONFPfGyD20ivr-MVKdwgwywjkKwSlTbZp84GzcAIrV=
+BHgxC3OU0EGzIRJNaPGY5Cm7H1vKVj0O5Q7O9i7JGUrjWRvWLzdRmoa5Xf-VY5fl7vIudrmOio5=
+f9E3dS3uQHyLu5_UsGwd9gP_iHiTX_rndrXsGJDbw0uOMelNAlU6wMfJKMlaEEZ5M01twUu1Ipn=
+Pegtzx3sI2VOupOPgKCWVSMLj788PQCs72y4u_3UAWFR6QPiFHfgnGpTqz-4mhbH5aqeqBdtjWw=
+0TPpM8GJNq-UDLPPc-cv4CAlsjv-WccYrw3VdU3tos9sF7M4H28PD94aGB2WoCNvlxbXN-qFnNZ=
+AguLyF1jzzCOrrgkjRfTwyZb6flL_MrRvudWU9UEg_AN9PF5SiFVDE6CrW3pzEvKU-fzT-3c6i_=
+a3I7fpgBY0QKfDiNOq2YGfD8I4Rt1GnC0u77Gy0XxQ7BJfvErGbGADu4hDwPxOHTjsMPzNMJUBC=
+MQPwlshdij8Q0ES6wvRE4kk3y5DdDh7vXinrbcQItJura_FPqNDuSJjUzab6yY7bz6ON-6ZiN_L=
+IlXKCvqHnBoJpEW34V1yTxhMMOkp9bQSlD4NBeCnis</a>=C2=A0 =C2=A0=C2=A0</div><div=
+ dir=3D"ltr"><br></div>
+</div>
+
+--00000000000073ee07064f17cdf1--
